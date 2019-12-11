@@ -1,0 +1,74 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "install": "react-native run-android",
+    "start": "react-native start --reset-cache",
+    "test": "jest",
+    "clean": "watchman watch-del-all && npm cache clean && cd android && ./gradlew clean && cd ..",
+    "lint": "eslint .",
+    "web": "react-scripts start",
+    "build-web": "react-scripts build"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "html-webpack-plugin": "^3.2.0",
+    "moment": "^2.22.2",
+    "react": "16.9.0",
+    "react-dom": "^16.12.0",
+    "react-native": "0.61.5",
+    "react-native-axios": "^0.17.1",
+    "react-native-button": "^2.4.0",
+    "react-native-elements": "^1.2.7",
+    "react-native-eventemitter": "0.0.1",
+    "react-native-fast-image": "^7.0.2",
+    "react-native-fbsdk": "^1.0.0",
+    "react-native-firebase": "^5.6.0",
+    "react-native-google-signin": "^2.1.1",
+    "react-native-table-component": "^1.2.1",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^2.17.0",
+    "react-navigation-redux-helpers": "^2.0.6",
+    "react-redux": "^5.0.7",
+    "react-scripts": "^3.3.0",
+    "react-smart-data-table": "^0.7.3",
+    "react-table": "^7.0.0-rc.8",
+    "redux": "^4.0.0",
+    "ts-loader": "^6.2.1",
+    "watchman": "^1.0.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.4",
+    "@babel/runtime": "7.7.4",
+    "@react-native-community/eslint-config": "0.0.5",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "babel-plugin-react-native-web": "0.11.7",
+    "eslint": "6.7.2",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.3",
+    "react-test-renderer": "16.9.0",
+    "webpack": "^4.41.2"
+  },
+  "jest": {
+    "preset": "react-native-web"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
